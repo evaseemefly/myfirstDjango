@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-模板页
-</body>
-</html>
+{% extends 'base.html' %}
+{% block title %}
+欢迎光临首页
+{% endblock %}
+{% block content %}
+{#{% include 'ad.html' %}#}
+    这里是首页欢迎光临
+{% endblock %}
