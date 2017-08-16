@@ -5,4 +5,16 @@
 {% block content %}
 {#{% include 'ad.html' %}#}
     这里是首页欢迎光临
+{#    1 返回的类型是string#}
+{#    {{ string }}#}
+
+{#    2 返回的类型是集合#}
+{#    教程列表::#}
+{#    {% for i in TutorialList %}#}
+{#    {{ i }}#}
+{#    {% endfor %}#}
+
+{#    3 返回的类型是字典#}
+    站点：{{ info_dic.site }}
+    内容：{{ info_dic.content }}
 {% endblock %}
