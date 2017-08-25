@@ -25,4 +25,5 @@ urlpatterns = [
     # url(r'^add/(\d+)/(\d+)/$',calc_views.add2,name="add2"),
     url(r'^new_add/(\d+)/(\d+)/$',calc_views.add2,name="add2"),
     url(r'^admin/', admin.site.urls),
+    url('',url(r'^add/(\d+)/(\d+)/$','app.views.add',name='add'))
 ]

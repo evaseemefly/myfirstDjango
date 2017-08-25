@@ -21,3 +21,7 @@ def add2(request,a,b):
     c=int(a)+int(b)
     return HttpResponse(str(c))
 # Create your views here.
+
+# urlpatterns=patterns('',url(r'^add/(\d+)/(\d+)/$','app.views.add',name='add'))
+#
+# {%url 'add' 4 5%}

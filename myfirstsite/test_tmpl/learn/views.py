@@ -13,8 +13,15 @@ def home(request):
     TutorialList=["Html","css","jquery","python"]
     return render(request,'home.html',{'TutorialList':TutorialList})
 
+# 返回字典
+# def home(request):
+#     info_dict={'site':u'drno','content':u'内容测试内容测试'}
+#     return render(request,'home.html',{'info_dic':info_dict})
+
 def home(request):
-    info_dict={'site':u'drno','content':u'内容测试内容测试'}
-    return render(request,'home.html',{'info_dic':info_dict})
+    List=map(str,range(100))
+    return render(request,'home.html',{'List':List})
+
+
 
 
